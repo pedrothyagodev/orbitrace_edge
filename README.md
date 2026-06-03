@@ -8,7 +8,7 @@ Tema: Industria Espacial — ODS 9 (Industria, Inovacao e Infraestrutura).
 
 ## Descricao do projeto
 
-O Orbitrace e um sistema embarcado em Arduino que simula o console fisico de uma estacao terrena de monitoramento orbital. A ideia surgiu de um problema real: o Brasil tem satelites estrategicos em orbita — o CBERS-4A, o Amazonia-1 e o SCD-2 — que sao usados pelo INPE para monitorar desmatamento, queimadas e desastres naturais. O problema e que esses satelites — que orbitam entre 628 km e 752 km de altitude — dividem espaco com mais de 27.000 detritos rastreados pela NORAD, se movendo a 7,5 km/s. As ferramentas profissionais para monitorar isso custam mais de US$ 20.000 por ano em licenca, o que coloca universidades e pesquisadores completamente fora do jogo.
+O Orbitrace e um sistema embarcado em Arduino que simula o console fisico de uma estacao terrena de monitoramento orbital. A ideia surgiu de um problema real: o Brasil tem satelites estrategicos em orbita, o CBERS-4A, o Amazonia-1 e o SCD-2, que sao usados pelo INPE para monitorar desmatamento, queimadas e desastres naturais. O problema e que esses satelites que orbitam entre 628 km e 752 km de altitude,dividem espaco com mais de 27.000 detritos rastreados pela NORAD, se movendo a 7,5 km/s. As ferramentas profissionais para monitorar isso custam mais de US$ 20.000 por ano em licenca, o que coloca universidades e pesquisadores completamente fora do jogo.
 
 O Orbitrace e uma alternativa open source, gratuita e em portugues. O circuito recebe dados de conjuncao (aproximacao entre um detrito e um satelite), calcula o nivel de risco usando modelos matematicos reais e exibe tudo em tempo real num display OLED, com um semaforo de LEDs e alertas sonoros pelo buzzer.
 
@@ -18,7 +18,7 @@ Este projeto e a camada de Edge Computing de uma solucao maior que o grupo desen
 
 ## Objetivo da solucao
 
-Levar os calculos de risco orbital para o nivel fisico, tornando o sistema operavel sem depender de computador — da mesma forma que funciona em uma estacao terrena real.
+Levar os calculos de risco orbital para o nivel fisico, tornando o sistema operavel sem depender de computador, da mesma forma que funciona em uma estacao terrena real.
 
 O console monitora 3 satelites brasileiros (CBERS-4A a 628 km, AMAZONIA-1 a 752 km e SCD-2 a 750 km), classifica o risco de colisao em 4 niveis (CRITICO, ALTO, MEDIO e BAIXO), calcula a probabilidade de colisao usando a funcao exponencial P(d) = e^(-d/0.5), calcula o periodo orbital pela 3 Lei de Kepler e a velocidade orbital pela lei da gravitacao, e exibe tudo no display com atualizacao a cada 3 segundos.
 
@@ -146,8 +146,8 @@ orbitrace-edge/
 | Recurso | Link |
 |---|---|
 | Simulador Wokwi | https://wokwi.com/projects/465683764519495681 |
-| Repositorio GitHub | *(inserir apos criar o repositorio)* |
-| Landing Page | https://landing-page-orbital-watch.vercel.app/ |
+| Repositorio GitHub | https://github.com/pedrothyagodev/orbitrace_edge |
+| Landing Page | https://landing-page-orbitrace.vercel.app/ |
 | Web Development | https://d4nielt0rres.github.io/WEB-DEVELOPMENTE-ORBITAL-GS/ |
 
 ---
