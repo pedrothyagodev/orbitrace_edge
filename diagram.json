@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "author": "Orbital Watch — FIAP 2026",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": 320,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "board-ssd1306",
+      "id": "oled",
+      "top": 0,
+      "left": -100,
+      "attrs": { "i2cAddress": "0x3c" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledVerde",
+      "top": 80,
+      "left": 150,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 148,
+      "left": 150,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledAmarelo",
+      "top": 80,
+      "left": 220,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 148,
+      "left": 220,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledLaranja",
+      "top": 80,
+      "left": 290,
+      "attrs": { "color": "orange" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 148,
+      "left": 290,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledVermelho",
+      "top": 80,
+      "left": 360,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r4",
+      "top": 148,
+      "left": 360,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "buzzer",
+      "top": 80,
+      "left": 460,
+      "attrs": { "volume": "0.1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "botao",
+      "top": 80,
+      "left": 560,
+      "attrs": { "color": "blue" }
+    }
+  ],
+  "connections": [
+    ["oled:GND", "uno:GND.1", "black", ["h0"]],
+    ["oled:VCC", "uno:3.3V",  "green", ["h0"]],
+    ["oled:SDA", "uno:A4",    "purple", ["h0"]],
+    ["oled:SCL", "uno:A5",    "violet", ["h0"]],
+
+    ["uno:6",    "r1:1",      "green",  ["v-20", "h50"]],
+    ["r1:2",     "ledVerde:A","green",  ["h0"]],
+    ["ledVerde:C","uno:GND.2","black",  ["v40","h-120"]],
+
+    ["uno:7",    "r2:1",      "yellow", ["v-30", "h50"]],
+    ["r2:2",     "ledAmarelo:A","yellow",["h0"]],
+    ["ledAmarelo:C","uno:GND.2","black",["v50","h-190"]],
+
+    ["uno:8",    "r3:1",      "orange", ["v-40", "h50"]],
+    ["r3:2",     "ledLaranja:A","orange",["h0"]],
+    ["ledLaranja:C","uno:GND.2","black",["v60","h-260"]],
+
+    ["uno:9",    "r4:1",      "red",    ["v-50", "h50"]],
+    ["r4:2",     "ledVermelho:A","red", ["h0"]],
+    ["ledVermelho:C","uno:GND.2","black",["v70","h-330"]],
+
+    ["uno:10",   "buzzer:1",  "gray",   ["v-60", "h200"]],
+    ["buzzer:2", "uno:GND.2", "black",  ["v80", "h-330"]],
+
+    ["uno:2",    "botao:1.l", "gray",   ["v-70", "h330"]],
+    ["botao:2.l","uno:GND.2", "black",  ["v90", "h-430"]]
+  ]
+}
