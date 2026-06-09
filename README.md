@@ -147,8 +147,8 @@ orbitrace-edge/
 |---|---|
 | Simulador Wokwi | https://wokwi.com/projects/465683764519495681 |
 | Repositório GitHub | https://github.com/pedrothyagodev/orbitrace_edge |
-| Landing Page | https://landing-page-orbitrace.vercel.app/ |
-| Web Development | https://d4nielt0rres.github.io/WEB-DEVELOPMENTE-ORBITAL-GS/ |
+| Landing Page | https://front-end-orbitrace.vercel.app/ |
+| Web Development | https://global-solution-webdev.vercel.app/ |
 
 ---
 
